@@ -25,9 +25,19 @@ public class CatalogoNaturalApplication {
 		return new ModelAndView("pagInicial");
 	}
 
-	@GetMapping("/2ndPag")
-	public ModelAndView SegPag(){
-		return new ModelAndView("2ndPag");
+	@GetMapping("/escolha")
+	public ModelAndView Escolha(){
+		return new ModelAndView("escolha");
+	}
+
+	@GetMapping("/cadastroAnimais")
+	public ModelAndView cadastroAnimais(){
+		return new ModelAndView("cadastroAnimais");
+	}
+
+	@GetMapping("/cadastroPlantas")
+	public ModelAndView ScadastroPlantas(){
+		return new ModelAndView("cadastroPlantas");
 	}
 
 	@GetMapping("/cadastro")
