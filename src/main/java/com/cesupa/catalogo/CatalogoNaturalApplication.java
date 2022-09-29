@@ -23,14 +23,41 @@ public class CatalogoNaturalApplication {
 	@Bean
 	CommandLineRunner runner(AnimalRepository animalRepository, PlantRepository plantRepository) {
 		return args -> {
-			Animal animal = new Animal("animal", "animal",
-                "animal", "animal", "animal", "animal", 10);
+			Animal animal1 = new Animal("Tigre", "Panthera tigris",
+                "Ásia", "Carne", "Florestas", "Carnívoro", 10);
 
-			Plant plant = new Plant("planta", "planta", "planta"
-				, "planta", true);
+			Animal animal2 = new Animal("Leão", "Panthera leo",
+                "Ásia e África subsaariana", "Carne", "Savanas, planícies", "Carnívoro", 15);
 
-			animalRepository.insert(animal);
-			plantRepository.insert(plant);
+			Animal animal3 = new Animal("Girafa", "Giraffa camelopardalis",
+                "África", "Folhas, caules, flores e frutos", "Savanas, pradarias", "Herbívoro", 15);
+
+			Animal animal4 = new Animal("Rinoceronte-indiano", "Rhinoceros unicornis",
+                "Nepal e Índia", "Gramíneas e galhos", "Pradarias altas e florestas", "Herbívoro", 40);
+
+			Animal animal5 = new Animal("Elefante-africano-de-savana", "Loxodonta africana",
+                "África e Ásia", "Gramíneas, ervas, folhas", "Savanas, bosques, florestas", "Herbívoro", 60);
+
+
+			Plant plant1 = new Plant("Abélia-da-china", "Abelia x grandiflora", "China"
+				, "Caprifoliaceae", false);
+
+			Plant plant2 = new Plant("Cacto-triangular", "Acanthocereus tetragonus", "América do Norte, América Central, América do Sul"
+				, "Cactaceae", true);
+
+			Plant plant3 = new Plant("Bôrdo-japonês", "Acer palmatum", "Ásia"
+				, "Sapindaceae", false);
+
+			Plant plant4 = new Plant("Bromélia-coral", "Aechmea fulgens", "América do Sul"
+				, "Bromeliaceae", false);
+
+			Plant plant5 = new Plant("Agave-dragão", "Agave attenuata", "América do Norte"
+				, "Agavaceae", false);
+
+
+
+			animalRepository.insert(animal1);
+			plantRepository.insert(plant1);
 		};
 	}
 
