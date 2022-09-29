@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <title>Page 4</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-4.css" media="screen">
+    <link rel="stylesheet" href="cadastroPlantas.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.18.8, nicepage.com">

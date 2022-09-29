@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <title>Page 2</title>
     <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-2.css" media="screen">
+    <link rel="stylesheet" href="escolha.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.18.8, nicepage.com">
