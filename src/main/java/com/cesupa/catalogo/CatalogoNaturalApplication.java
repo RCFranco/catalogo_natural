@@ -40,11 +40,5 @@ public class CatalogoNaturalApplication {
 		return new ModelAndView("cadastroPlantas");
 	}
 
-	@GetMapping("/cadastro")
-	public ModelAndView CadsPag(){
-		return new ModelAndView("cadastro");
-	}
-
-
 
 }
