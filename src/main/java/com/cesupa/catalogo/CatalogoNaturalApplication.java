@@ -8,8 +8,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -55,10 +53,21 @@ public class CatalogoNaturalApplication {
 				, "Agavaceae", false);
 
 
+			if (animalRepository.findAll().size() == 0) {
+				animalRepository.insert(animal1);
+				animalRepository.insert(animal2);
+				animalRepository.insert(animal3);
+				animalRepository.insert(animal4);
+				animalRepository.insert(animal5);
+			}
 
-			animalRepository.insert(animal1);
-			plantRepository.insert(plant1);
+			if (plantRepository.findAll().size() == 0) {
+				plantRepository.insert(plant1);
+				plantRepository.insert(plant2);
+				plantRepository.insert(plant3);
+				plantRepository.insert(plant4);
+				plantRepository.insert(plant5);
+			}
 		};
 	}
-
 }
